@@ -1,0 +1,164 @@
+﻿body {
+    background: #a3c1ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .leftSide {
+    position: relative;
+    background: linear-gradient( to bottom, navy, palegoldenrod);
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profileText .imgBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fafafa;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fafafa;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+    margin: 0;
+    padding-left: 1.3em;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 7px 0;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    color: #841b2d;
+}
+
+.contactInfo ul li span {
+    color: #fafafa;
+    font-weight: 300;
+}
+
+.contactInfo ul li a:link {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.contactInfo ul li a:visited {
+    color: #fafafa;
+    text-decoration: underline;
+}
+
+.contactInfo ul li a:hover {
+    color: #fafafa;
+    text-decoration: underline;
+}
+
+.contactInfo.education div:nth-child(1) {
+    color: navy;
+    font-weight: bold;
+}
+
+.contactInfo.education div {
+    color: navy;
+    font-weight: 500;
+}
+
+.container .rightSide {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 5px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-bottom: 7%;
+}
+
+.about .skills_list ul li {
+    position: relative;
+    column-count: 2;
+    list-style: none;
+    font-size: 19px;
+    column-gap: 0;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
