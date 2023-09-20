@@ -1,34 +1,91 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Telah Capell" />
-    <title>Telah's Porfolio</title>
+    <title>Telah Capell</title>
     <link rel="icon" href="Images/icons8-code-40.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"> 
     <link rel="stylesheet" href="index.css"/> <!--External CSS file for landing webpage-->
 </head>
 <body>
+  
+     <div class="transbox">
 
-    <div class="transbox">
-        <h1>Telah Capell's Porfolio</h1>
+        
+        <h1>Telah Capell</h1>
         <h2>Aspiring Web Developer</h2>
 
         <hr>
 
-        <h2>Projects I Have Done</h2>
-
-        <h3><a href="./other projects/calculator.html">Simple Calculator Project</a></h3>
-        <img src="./Images/simple calculator.png" alt="Simple Calculator" height="200"/>
-        <br>
-        <h3><a href="./other projects/Telah Capell-Resume.html">Resume</a></h3>
-        <img src="./Images/resume preview.png" alt="Telah's Resume" height="200"/>
         <br/>
 
-        <hr/>
-        <footer>You can contact me by Email <address>dv3rgntfr33lncr@gmail.com</address> or Phone: 208-654-6581</footer>
+        <div class="introduction">
+
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <div class="col-lg-6 mx-auto">
+                <div class="overflow-hidden" style="max-height: 100vh;">
+                    <div class="container px-5">
+                      <img class="profileimg" src="./Images/profile pic.jpg" alt="Telah's profile image">
+                    </div>
+                    <p class="mb-4">Hello there! I'm currently an IT Service Desk Technician with plenty of experience with problem-solving. However, I do create web applications in my spare time because I love seeing my designs come alive. Please feel free to come back my portfolio as I continue to add more fun features.</p>
+            
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <br/>
+
+        <h2>Projects I Have Done</h2>
+        
+        <div class="projects">
+          <a class="projectlink" href="./other projects/calculator.html"><img src="./Images/simple calculator.png" alt="Simple Calculator" height="230" width="200"/></a>
+          <h3 class="projecttitle">Simple Calculator</h3>
+          <p class="projectinfo">A fully functional simple calculator built with HTML, CSS, and JavaScript. Just click on the image and try it out!</p>
+        </div>
+        
+        <div class="projects">
+          <a class="projectlink" href="./other projects/Telah Capell-Resume.html"><img src="./Images/resume preview.png" alt="Telah's Resume" height="230" width="200"/></a>
+          <h3 class="projecttitle">My Resume</h3>
+          <p class="projectinfo">Responsive webpage of my resume built with HTML and CSS. It is been kept up-to-date with most current work experience, contact information, skills, etc.</p>
+        </div>
+          
+        <h2>My Interests</h2>
+
+        <div class="carousel-wrapper">
+          <span id="item-1" alt="collage of nature images"></span>
+          <span id="item-2" alt="image of books"></span>
+          <span id="item-3" alt="image of pepperoni pizza casserole"></span>
+          <div class="carousel-item item-1" >
+            <h2>Natural Photography</h2>
+            <p>Nature is beautiful. I like to capture those colorful, natural phenomenons and landscapes whenever I come across them. This collage is of my favorite pictures I took during my travels.</p>
+            <a class="arrow arrow-prev" href="#item-3"></a>
+            <a class="arrow arrow-next" href="#item-2"></a>
+          </div>
+          
+          <div class="carousel-item item-2">
+            <h2>Reading</h2>
+            <p>As one could probably guess by this picture, my favorite genre is definitely mystery. And my collection of books I own is certainly not contained in this small shelf.</p>
+            <a class="arrow arrow-prev" href="#item-1"></a>
+            <a class="arrow arrow-next" href="#item-3"></a>
+          </div>
+          
+          <div class="carousel-item item-3">
+            <h2>Cooking</h2>
+            <p>Cooking is one of the most important life skills to have and one could have fun exploring putting different ingredients together. This picture is of a pepperoni pizza casserole I often cook for the family.</p>
+            <a class="arrow arrow-prev" href="#item-2"></a>
+            <a class="arrow arrow-next" href="#item-1"></a>
+          </div>
         </div>
 
+        <hr/>
+        <footer class="profilelink">You can connect with me on <a href="https://www.linkedin.com/in/telah-capell/">LinkedIn</a alt= "Telah's LinkedIn Page"></footer>
 
+     </div>
+     
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
 </html>
