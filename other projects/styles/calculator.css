@@ -1,5 +1,28 @@
-﻿body {
+body {
     background-color: #888;
+}
+
+nav {
+    padding: 5px;
+    width: auto;
+    font-weight: bold;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #B22222;
+    display: inline;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 8px;
+    font-family: 'Bookman Old Style';
+}
+
+a:hover {
+    background-color: #111;
+    color: #CD5C5C;
 }
 
 table {
