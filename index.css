@@ -1,6 +1,8 @@
-﻿html {
+html {
     background: url("Images/mcnaryDam.jpg") no-repeat center fixed;
     background-size: cover;
+    z-index: -10;
+    font-family: 'Bookman Old Style';
 }
 
 body {
@@ -20,68 +22,225 @@ body {
 }
 
 div.transbox {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(105, 105, 105, 0.5);
     height: auto;
+    
     
 }
 
-h1, h2, h3 {
+h1, h2 {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     color: #000000;
+}
+
+h1 {
+    padding-top: 20px;
 }
 
 hr {
     width: 80%
 }
 
-img {
+.profileimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    height: 300px;
+    height: 200px;
+    width: 170px;
+    border-radius: 60%;
 }
 
-p {
-    margin-left: 70px;
-    margin-right: 70px;
-    text-align: center;
+.introduction p {
+    margin-left: 200px;
+    margin-right: 175px;
+    text-align: left;
     font-weight: bold;
     color: #000000;
     font-size: 18px;
 }
 
-nav {
+.originalnav nav {
     padding: 5px;
     width: auto;
     font-weight: bold;
     color: #333;
 }
 
-a {
+.originalnav a {
     text-decoration: none;
     text-align: center;
     color: #B22222;
     display: inline;
     font-size: 20px;
     font-weight: bolder;
-    padding: 14px 16px;
+    padding: 10px 8px;
 }
 
-a:hover {
+.originalnav a:hover {
     background-color: #111;
     color: #CD5C5C;
 }
 
-blockquote {
+.projects {
+    margin: 30px 375px auto 375px;
+    height: auto;
+    width: auto;
+    padding-bottom: 150px;
+}
+
+.projecttitle {   
+    text-align: left;
+}
+
+.projectlink {
+   float: left;
+   padding-right: 20px;
+}
+
+.profilelink img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.projectinfo {
+    display: block;
+    align-items: left;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+.carousel-wrapper{
+    height: 450px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .carousel-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev{
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+      right: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    }
+  
+  .light{
+    color: white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background: url('./Images/photography.jpg');
+    background-size: cover;
+    }
+
+    .item-1 h2{
+      margin-top: 300px;
+        color: #F2F2F2;
+    }
+
+    .item-1 p {
+      color: #F2F2F2;
+      font-weight: bold;
+    }
+
+  .item-2{
+    background: url('./Images/reading.JPG');
+     background-size: cover;
+  }
+
+  .item-2 h2 {
+    margin-top: 300px;
+    color: #F2F2F2;
+  }
+
+  .item-2 p {
+    color: #F2F2F2;
+      font-weight: bold;
+  }
+
+  .item-3{
+    background: url('./Images/cooking.jpg');
+     background-size: cover
+  }
+
+  .item-3 h2{
+    margin-top: 300px;
+    color: #F2F2F2;
+  }
+
+  .item-3 p {
+    color: #F2F2F2;
+      font-weight: bold;
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+
+footer {
+    padding-bottom: 20px;
+    text-align: center;
     font-weight: bold;
     color: #000000;
 }
 
-footer {
-    text-align: center;
-    font-weight: bold;
-    color: #000000;
+.profilelink a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    padding: 2px;
+}
+
+.profilelink a:hover {
+    background-color: #000;
+    color: #CD5C5C;
 }
